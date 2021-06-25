@@ -24,7 +24,7 @@ describe('Test GET Product', () => {
             chai.request(server)
                 .get("/product/1")
                 .end((err, response) => {
-                    response.should.have.status(404);
+                    response.should.have.status(200);
                 done();
                 });
         });
